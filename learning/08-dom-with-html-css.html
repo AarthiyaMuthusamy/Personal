@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    Dom exercise
+    </title>
+    <style>
+    
+     p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    
+     }
+
+     .subscribe-button{
+      border: none;
+      background-color: black;
+      color: white;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      
+     }
+
+     .is-sub{
+      color: black;;
+      background-color: rgb(233, 229, 229);
+     } 
+     
+
+     .calculation-button{
+      border: none;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      color: white;
+      font-size: 16px;
+      background-color: rgb(36, 138, 36);
+      cursor: pointer;
+     }
+
+     .input-css{
+
+      width: 190px;
+      height: 36px;
+      font-size: 16px;
+
+     }
+     .input-css::placeholder{
+
+      font-size: 16px;
+      padding-left: 10px;
+     }
+
+    </style>
+  </head>
+
+  <body>
+  <p>Youtube subscribe button</p>
+  <button onclick="
+  subscribe();
+  " class="sub-button subscribe-button">
+  
+  Subscribe
+</button>
+
+
+
+<p>Amazon shiping calculator</p>
+<input class="input-text input-css" placeholder="cost of order" onkeydown="
+keyfunction(event);
+
+" >
+<button onclick="
+calculate();
+
+" class="calculation-button">Calculate</button>
+<p class="cal-button "></p>
+
+
+   <script>
+
+    function keyfunction(event){
+
+      console.log(event.key);
+
+      if(event.key === 'Enter'){
+
+      calculate();
+    }
+  }
+
+    function calculate(){
+     const elementbutton= document.querySelector('.input-text');
+
+    let cost = Number(elementbutton.value);
+
+     if(cost < 40){
+       cost+=10;
+
+     }
+
+     document.querySelector('.cal-button').innerHTML = `$${cost}`;
+
+
+    }
+    function subscribe(){
+      const button = document.querySelector('.sub-button');
+      // for space probelm in js use innerText
+      if(button.innerText ==='Subscribe'){
+        button.innerHTML ='Subscribed';
+        button.classList.add('is-sub');
+      }
+      else{
+        button.innerHTML = 'Subscribe';
+        button.classList.remove('is-sub');
+    
+      }
+    }
+   </script>
+  </body>
+</html>

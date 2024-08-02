@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    Dom exercise
+    </title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+  <p>Youtube subscribe button</p>
+  <button onclick="
+  subscribe();
+  " class="sub-button">
+  
+  subscribe
+</button>
+
+
+
+<p>Amazon shiping calculator</p>
+<input class="input-text" placeholder="cost of order" onkeydown="
+keyfunction(event);
+
+" >
+<button onclick="
+calculate();
+
+" >Calculate</button>
+<p class="cal-button"></p>
+
+
+   <script>
+
+    function keyfunction(event){
+
+      console.log(event.key);
+
+      if(event.key === 'Enter'){
+
+      calculate();
+    }
+  }
+
+    function calculate(){
+     const elementbutton= document.querySelector('.input-text');
+
+    let cost = Number(elementbutton.value);
+
+     if(cost < 40){
+       cost+=10;
+
+     }
+
+     document.querySelector('.cal-button').innerHTML = `$${cost}`;
+
+
+    }
+    function subscribe(){
+      const button = document.querySelector('.sub-button');
+      // for space probelm in js use innerText
+      if(button.innerText ==='subscribe'){
+        button.innerHTML ='subscribed';
+      }
+      else{
+        button.innerHTML = 'subscribe';
+      }
+    }
+   </script>
+  </body>
+</html>

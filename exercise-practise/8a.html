@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects problem</title>
+
+  </head>
+  <body>
+    <script>
+      //1
+      const product = {
+        name : 'basketball',
+        price: 2095
+      };
+      console.log(product);
+
+      //2
+
+      product.price += 500;
+      console.log(product.price);
+
+      //3
+       product['delivery-time'] = '3days';
+       console.log(product['delivery-time']);
+
+
+       // compare two product price and print the product name
+
+       /*
+       const pro1 = {
+         name :'milk',
+         price :60
+       };
+
+       const pro2 = {
+        name:'bread',
+        price:30
+       };
+
+       function compareprice(product1,product2){
+
+          if(product1.price < product2.price){
+
+          return product1.name;
+          }
+          else{
+            return product2.name;
+          }
+
+       };
+
+       let value = compareprice(pro1,pro2);
+       console.log(value);
+        */
+
+       //5
+
+       const pro1 = {
+         name :'milk',
+         price :60
+       };
+
+       const pro2 = {
+        name :'milk',
+         price :60
+       };
+
+       function isSameProduct(product1,product2){
+
+          if(product1.price  === product2.price && product1.name === product2.name){
+
+          return true;
+          }
+          else{
+            return false;
+          }
+
+       };
+
+       let value = isSameProduct(pro1,pro2);
+       console.log(value);
+
+
+       //6
+       // convert to lowercase
+       console.log('Good Morning'.toLowerCase());
+      //7 print stirng many times using repeat method
+
+      console.log('test'.repeat(4));
+    </script>
+  </body>
+</html>

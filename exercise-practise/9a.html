@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+        Exercise for Dom
+    </title>
+    
+  </head>
+
+  <body>
+    
+    <button onclick="
+  document.querySelector('.text-p').innerHTML =`you chose : head`;
+  
+   
+  " class="head-button" >heads</button>
+    <button onclick="
+    document.querySelector('.text-p').innerHTML = `you chose : tail`;
+    "  
+    class="tail-button">tails</button>
+    <p class="text-p"></p>
+
+
+    <input placeholder="Name"  class="text-input" onkeydown="
+       
+     keyfunction(event);
+    ">
+    <button onclick="
+    submitcal();
+    " class="button-class">Submit</button>
+    <p class="text-p1"></p>
+
+
+
+    <p>Amazon shiping calculator</p>
+    <input class="input-text" placeholder="cost of order" onkeydown="
+    keyfunction1(event);
+    
+    " >
+    <button onclick="
+    calculate();
+    
+    " >Calculate</button>
+    <p class="cal-button"></p>
+    
+  <input placeholder="type something" class="text-type" onkeyup="
+  
+  typefunction();
+  ">  
+<p class="type-text"></p>
+
+   <script>
+function typefunction(event){
+
+  
+    let text = document.querySelector('.text-type').value;
+
+
+document.querySelector('.type-text').innerHTML = text;
+  }
+
+
+
+function keyfunction1(event){
+
+    if(event.key === 'Enter'){
+
+    calculate();
+   }
+}
+
+function calculate(){
+const elementbutton= document.querySelector('.input-text');
+
+let cost = Number(elementbutton.value);
+
+if(cost < 40){
+ cost+=10;
+
+}
+
+document.querySelector('.cal-button').innerHTML = `$${cost}`;
+
+
+}
+
+
+  
+
+        function submitcal(){
+          const value = document.querySelector('.text-input');
+
+          let text= value.value;
+          document.querySelector('.text-p1').innerHTML =`your name is: ${text}`;
+        }
+
+        function keyfunction(event){
+          console.log(event.key);
+          if(event.key === 'Enter'){
+            submitcal();
+          }
+        }
+
+      
+
+      
+      </script>
+  </body>
+</html>
+
+

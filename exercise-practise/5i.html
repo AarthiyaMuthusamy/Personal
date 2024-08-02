@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart quantity
+
+    </title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h2> Cart Quantity</h2>
+    <button onclick="
+      console.log(`Cart Quantity: ${cartvalue}`)
+    
+    ">Show Quantity</button>
+    <button onclick="
+    if(cartvalue < 10){
+      cartvalue += 1;
+        console.log(`Cart Quantity: ${cartvalue}`);
+      
+    }
+    else{
+    alert(`The cart is full`);
+     }
+     
+     ">Add to cart</button>
+    <button onclick="
+
+    if(cartvalue < 9){
+      cartvalue += 2;
+        console.log(`Cart Quantity: ${cartvalue}`);
+      
+    }
+    else{
+    alert('The cart is full');
+     }  
+    
+    ">+2</button>
+    <button onclick="
+    if(cartvalue < 7){
+      cartvalue += 3;
+        console.log(`Cart Quantity: ${cartvalue}`);
+      
+    }
+    else{
+    alert('The cart is full');
+     }
+     
+     ">+3</button>
+
+    <button onclick="
+    if(cartvalue < 6){
+      cartvalue += 4;
+        console.log(`Cart Quantity: ${cartvalue}`);
+      
+    }
+    else{
+     alert('The cart is full');
+     }
+     
+     ">+4</button>
+
+<button onclick="
+if(cartvalue < 5){
+      cartvalue += 5;
+        console.log(`Cart Quantity: ${cartvalue}`);
+      
+    }
+    else{
+    alert('The cart is full');
+     }
+     
+     ">+5</button>
+
+<button onclick="
+
+if(cartvalue <= 0){
+  alert('not enough items in the cart');
+}
+else{
+    cartvalue--;
+       
+    console.log(`Cart Quantity: ${cartvalue}`);
+}
+    
+    ">Remove from cart</button>
+
+<button onclick="
+
+if(cartvalue <= 0){
+  alert('not enough items in the cart');
+}
+else{
+    cartvalue-=2;
+       
+    console.log(`Cart Quantity: ${cartvalue}`);
+}
+
+">-2</button>
+
+<button onclick="
+  
+if(cartvalue <= 0){
+  alert('not enough items in the cart');
+}
+else{
+    cartvalue-=3;
+       
+    console.log(`Cart Quantity: ${cartvalue}`);
+}
+    
+    ">-3</button>
+
+
+
+
+    <button onclick="
+    cartvalue= 0;
+    console.log('Cart was reset');
+    console.log(`Cart Quantity: ${cartvalue}`);
+    
+    ">Reset Cart</button>
+
+   <script>
+    let cartvalue =0;
+    
+
+   </script>
+  </body>
+</html>

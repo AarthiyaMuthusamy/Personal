@@ -1,0 +1,22 @@
+
+
+.grid-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  height: 700px;
+  width: 700px;
+
+}
+
+
+.grid-div
+,button{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}

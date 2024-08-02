@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+            calculator
+    </title>
+  <link rel="stylesheet" href="/css/cal.css" />
+  
+  </head>
+
+  <body>
+ 
+
+  <p class="text-type"></p>
+  <br>
+  <br>
+
+    <button onclick="
+      
+    selectkey('1');
+      
+      " class="button1">1
+    </button> 
+    <button onclick="
+      
+  selectkey('2');
+    " class="button2">2
+
+    </button>
+
+<button onclick="
+ selectkey('3');
+" class="button3">3</button>
+<button onclick="
+selectkey(' + ');
+">+
+
+</button>
+
+
+<button onclick="
+      
+selectkey('4');
+  
+  " class="button1">4
+</button> 
+<button onclick="
+  
+selectkey('5');
+" class="button2">5
+
+</button>
+
+<button onclick="
+selectkey('6');
+" class="button3">6</button>
+<button onclick="
+selectkey(' - ');
+">-
+
+</button>
+
+
+
+<button onclick="
+      
+selectkey('7');  
+">7</button> 
+<button onclick="
+  
+selectkey('8');
+">8
+
+</button>
+
+<button onclick="
+selectkey('9');
+">9</button>
+
+<button onclick="
+selectkey('0');
+">0</button>
+<button onclick="
+selectkey(' * ');
+">*
+
+</button>
+
+<button onclick="
+selectkey(' / ');
+">/
+
+</button>
+
+<button onclick="
+selectkey(' % ');
+">%
+
+</button>
+
+
+<button onclick="
+    totalvalue = eval(totalvalue);
+    display();
+    localStorage.setItem('totalvalue',totalvalue);
+    ">=</button>
+<button onclick="
+    totalvalue ='';
+    display();
+    localStorage.setItem('totalvalue',totalvalue);
+">Clear</button>
+
+
+ 
+   <script>
+    let totalvalue = localStorage.getItem('totalvalue')|| '';
+  
+
+
+    function selectkey(keyvalue){
+        totalvalue+=keyvalue;
+        display();
+        localStorage.setItem('totalvalue',totalvalue);
+    
+
+    }
+
+
+    function display(){
+         
+      document.querySelector('.text-type').innerHTML = totalvalue; 
+       
+    }
+
+  
+   </script>
+  </body>
+</html>
