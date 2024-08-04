@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+ html css js together exercise
+    </title>
+    <link  rel="stylesheet" href="/exercise-practise/css/html-css-js.css" />
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+
+
+
+<!-- a part-->
+    <button class="cart-button">Add to Cart</button>
+<!-- b part-->    
+   <button class="request-button">Request now</button>
+   <button class="schedule-button">Schedule for later</button>
+<!-- c part-->
+   <button class="js-button">Test</button>
+
+<!-- e part-->   
+<button onclick="
+   
+clickfunction('.js-button1');
+"  class="not-toggled js-button1">Gaming</button>
+
+
+<button 
+class="not-toggled js-button2"
+ onclick="
+
+clickfunction('.js-button2');
+"  >Music</button>
+
+
+<button onclick="
+
+clickfunction('.js-button3');
+"  
+class="not-toggled js-button3">Tech</button> 
+   
+   <script>
+    let variable1 = document.querySelector('.js-button').classList.contains('js-button');
+    console.log(variable1);
+
+    function clickfunction(select){
+
+    const button = document.querySelector(select);
+      if(!button.classList.contains('is-toggled')){
+        button.classList.add('is-toggled');
+      }
+      else{
+        button.classList.remove('is-toggled');
+      }
+   
+    }
+
+  
+
+    
+
+    
+   </script>
+  </body>
+</html>

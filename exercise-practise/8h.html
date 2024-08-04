@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    Dom exercise
+    </title>
+    <style>
+
+
+    </style>
+  </head>
+
+  <body>
+<p>Amazon shiping calculator</p>
+<input class="input-text" placeholder="cost of order" onkeydown="
+keyfunction(event);
+
+" >
+<button onclick="
+calculate();
+
+" >Calculate</button>
+<p class="cal-button"></p>
+
+
+   <script>
+
+    function keyfunction(event){
+
+      console.log(event.key);
+
+      if(event.key === 'Enter'){
+
+      calculate();
+    }
+  }
+
+    function calculate(){
+     const elementbutton= document.querySelector('.input-text');
+
+    let cost = Number(elementbutton.value);
+
+     if(cost >0  && cost< 40){
+       cost+=10;
+
+     }
+    if(cost < 0){
+      document.querySelector('.cal-button').innerHTML = `Error : cost cannot be less than $0`;
+      return;
+     }
+
+     document.querySelector('.cal-button').innerHTML = `$${cost}`;
+
+
+    }
+    
+   </script>
+  </body>
+</html>

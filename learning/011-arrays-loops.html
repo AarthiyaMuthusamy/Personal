@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    Arrays and loops
+    </title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+
+
+   <script>
+    // create array
+    const myarray = [
+      10,
+      20,
+      30,
+      40
+    ];
+    console.log(myarray);  
+    // index value in position
+    console.log(myarray[0]);
+    //update array with new value
+    myarray[1] = 50;
+    console.log(myarray[1]);  
+
+   // you can add any type of value in array
+    const arr1 = [1,'hello',true,{name:'aarthiya'},[1,2]];
+    console.log(arr1);
+    //typeof array os obj 
+    console.log(typeof arr1);
+    //built in function chack is an array
+    console.log(Array.isArray([1,2]));
+    //array length
+    console.log(arr1.length);
+
+    //add array element
+    arr1.push(100)
+    console.log(arr1);
+
+    // only print the mention index element
+  
+    console.log(  arr1.slice(0,3));
+
+    //remove array element  
+    arr1.splice(0,1);
+    console.log(arr1);
+
+</script>
+  </body>
+</html>
