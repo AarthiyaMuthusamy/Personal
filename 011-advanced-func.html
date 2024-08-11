@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adavanced functions
+
+    </title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+   <script>
+/*
+    // hoisting before initialize the function we use function it will search funtion until the end of code and return it 
+    //special feature
+    greeting();
+    function greeting(){
+      console.log('hello');
+    }
+    greeting();
+  
+  const num1 = function greeting(){
+    console.log('hello2');
+  }
+
+  console.log(num1);
+  console.log(typeof num1);
+
+    //anonymous function
+  const num2 = function(){
+    console.log('hello2');
+  }
+
+  console.log(num2);
+  console.log(typeof num2);
+
+const num3 ={
+  num:2,
+  fun : function greeting(){
+    console.log('hello3');
+  }
+
+}
+
+num3.fun();
+
+// normal function how it pass the parameter as a function
+function display(param){
+ console.log(param);
+}
+
+display(2);
+// pass function as a parameter
+function run(param){
+param();
+}
+run(function greeting(){
+  console.log('hello4');
+})
+
+    */
+
+    /*
+//built in 
+//first param run in future
+//how long to wait in milliseconds
+//asynchoronuos function do it wont wait for next line will print after 3 ssec it will print    
+    setTimeout(function greeting(){
+  console.log('hello4');
+},3000);
+
+console.log('next line');
+//it asynchoronous code
+// it an each interval it will print
+setInterval(function(){
+  console.log('interval')
+},3000);
+console.log('nextline');
+*/
+
+[
+  'make dinner',
+  'wsh dishes',
+  'watch youtube'
+].forEach(function(value,index){
+
+  console.log(index) 
+  console.log(value);
+
+});
+   </script>
+  </body>
+</html>

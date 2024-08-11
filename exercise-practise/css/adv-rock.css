@@ -1,0 +1,57 @@
+
+body{
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.img-button{
+  height: 50px;
+
+}
+.rock-button{
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.result{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.img-result{
+  height: 50px;
+  width: 50px;
+  
+}
+
+.score{
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.reset-button,
+.auto-button{
+
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 15px;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+}

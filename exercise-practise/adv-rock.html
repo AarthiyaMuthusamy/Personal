@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+       Rock-paper-scissor game
+    </title>
+  <link rel="stylesheet" href="/exercise-practise/css/adv-rock.css" />
+  </head>
+
+  <body>
+
+    <p class="title"> Rock Paper Scissors</p>
+    <button onclick="
+       playGame('rock');
+    
+    " class="rock-button"><img class="img-button" src="https://supersimple.dev/projects/rock-paper-scissors/images/rock-emoji.png"></button>
+
+    <button   onclick="
+    playGame('paper');
+  " class="rock-button"><img class="img-button" src="https://supersimple.dev/projects/rock-paper-scissors/images/paper-emoji.png">
+  
+</button>
+    <button  onclick="
+      playGame('scissors');
+    
+ " class="rock-button">
+ <img class="img-button" src="https://supersimple.dev/projects/rock-paper-scissors/images/scissors-emoji.png"></button>
+
+
+<p class="result-js result"></p>
+<p class="result1-js"></p>
+<p class="js-score score"></p>
+
+ <button onclick="
+  score.wins=0;
+  score.losses=0;
+  score.ties=0;
+  //remove the score element
+  localStorage.removeItem('score');
+  updateScore();
+
+ " class="reset-button">reset score</button>
+ <button  onclick="
+ autoplay();
+ " class="auto-button">Auto Play</button>
+
+   <script src="/exercise-practise/scripts/adv-rock.js">
+
+
+
+   </script>
+  </body>
+</html>
