@@ -121,6 +121,64 @@ const str1 = ['egg','apple','egg','egg','ham'];
 console.log(removevalue(str1));
 */
 
+/*
+
+for(let i=1;i<=20;i++){
+  if(i%3===0){
+    console.log('Fizz');
+  }
+  else if(i%5 ===0){
+    console.log('Buzz');
+  }
+  else if(i%3 === 0 && i%5===0){
+    console.log('FizzBuzz');
+  }
+  else{
+    console.log(i);
+  }
+}
+
+*/
+
+
+/*
+function findelement(array , word){
+  for(let i =0;i<array.length;i++)
+    {
+    if(array[i] === word){
+
+     return i;
+      
+    }
+    }
+    return -1;
+    }
+
+
+  function unique(array){
+
+
+    const result=[];
+    for(let i =0;i<array.length;i++)
+    {
+    const word = array[i];
+    if(findelement(result,word) ===-1){
+      result.push(word);
+    }
+    }
+    return result;
+  }
+
+
+
+const str1 =['green','red','blue','orange','red','green '];
+
+console.log(unique(str1));
+
+
+*/
+
+
    </script>
   </body>
 </html>
