@@ -13,9 +13,11 @@ updateScore();
 
  let isAutoplay  = false;
  let interval;
+
 function autoplay(){
 if(!isAutoplay){
-  interval = setInterval(function(){
+  //arrow function
+  interval = setInterval(()=>{
     const playermove = pickMove();
     playGame(playermove);
   },1000);
@@ -25,6 +27,17 @@ if(!isAutoplay){
   isAutoplay = false;
 }
 }
+
+document.querySelector('.rock-js').addEventListener('click',()=>{
+  playGame('rock');
+})
+
+document.querySelector('.rock-js1').addEventListener('click',()=>{
+  playGame('paper');
+})
+document.querySelector('.rock-js2').addEventListener('click',()=>{
+  playGame('scissors');
+})
 
 function playGame(playermove){
 const comMove = pickMove();
