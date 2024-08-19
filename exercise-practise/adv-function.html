@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adv function exercise
+
+    </title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+
+    
+
+    <button onclick="
+      addfunction();
+      ">Add</button>
+
+    <button onclick="
+    removefunction();
+    
+    ">Remove</button>
+
+
+   <!--  <button onclick="
+      
+      clickbutton();
+      
+      " class="button-click">Start</button>
+
+
+<button onclick="
+cartfunction();
+" >Add to Cart</button>
+   <p class="para-text"></p>
+   
+   -->
+   <script>
+    /*
+    let add = function(){
+      console.log(5);
+    }
+    add();
+    add();
+  
+   function runtwice(fun){
+    fun();
+    fun();
+   }
+
+   runtwice(function(){
+    console.log('12b');
+   })
+
+   runtwice(add);
+
+*/
+    /*
+function clickbutton(){
+  setTimeout(function(){
+     document.querySelector('.button-click').innerHTML = 'Finished!';
+  },1000)
+}
+
+
+
+    
+function clickbutton(){
+
+  document.querySelector('.button-click').innerHTML = 'Loading!';
+  setTimeout(function(){
+     document.querySelector('.button-click').innerHTML = 'Finished!';
+  },1000)
+}
+
+
+
+let timeoutid;
+function cartfunction(){
+  
+     document.querySelector('.para-text').innerHTML = 'Added';
+  
+
+  clearTimeout(timeoutid);
+
+  timeoutid = setTimeout(function(){
+    document.querySelector('.para-text').innerHTML = '';
+  },2000);
+  
+
+}
+
+*/
+/*
+document.title ='App';
+let intervaltimeid;
+let count =0;
+setInterval(function(){
+  count++;
+  document.title =`(${count})new notifications`;
+},2000);
+
+clearInterval(intervaltimeid);
+intervaltimeid =setInterval(function(){
+  document.title ='App';
+},3000);
+
+*/
+
+document.title ='App';
+let messages =2;
+let count =0;
+function addfunction(){
+
+  count++;
+  document.title =`(${count})new notifications`;
+
+
+
+}
+
+function removefunction(){
+  count--;
+  if( count <= 0 && count===0){
+    document.title =`App`;
+  }
+  else{
+
+
+    
+  document.title =`(${count})new notifications`;
+  }
+
+   
+
+}
+
+//first one isarrow function
+//second is shortcut 
+const object2={
+  method:()=>{
+
+  },
+  method(){
+
+  }
+}
+
+   </script>
+  </body>
+</html>

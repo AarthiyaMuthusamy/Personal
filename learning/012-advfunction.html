@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+
+    </title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <button onclick="" class="js-button">click
+
+    </button>
+    
+   <script>
+
+
+ const buttonval =  document.querySelector('.js-button');
+
+/* const eventlist = ()=>{
+  console.log('click');
+ }
+
+ buttonval.addEventListener('click',eventlist)
+
+ buttonval.removeEventListener('click',eventlist)
+ */
+/*
+buttonval.addEventListener('click',()=>{
+  console.log('click');
+})
+buttonval.removeEventListener('click',()=>{
+  console.log('click');
+})*/
+ buttonval.addEventListener('click',()=>{
+ console.log('click2');
+ })
+
+//arrow function u can  use it
+    
+const arraval = ()=>{
+  console.log('hello');
+
+    }
+    
+    arraval();
+
+    //noraml function
+
+    const valuefun = function(){
+      console.log('hello');
+    }
+    
+    valuefun();
+
+
+    const val = (param,param2)=>{
+      console.log(param);
+      console.log(param2);
+    }
+    val('hello',5);
+
+    const oneparam = (param1)=>{
+        console.log(param1+1);
+
+    }
+
+    oneparam(5);
+
+//it give one line output
+    const oneval =()=> 2+3;
+    console.log(oneval());
+
+   </script>
+  </body>
+</html>
