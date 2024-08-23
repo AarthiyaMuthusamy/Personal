@@ -1,0 +1,18 @@
+.sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 60px;
+  background-color: white;
+ width: 72px;
+ display: flex;
+ justify-content: space-around;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+.img-for-sidebar{
+
+  height: 40px;
+}
